@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Building a Calculator with Bootstrap UI</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+	</head>
+	<body>
+		<!-- main content -->
+		<div class="container vh-100 d-flex align-items-center justify-content-center">
+			<div class="card shadow">
+				<div class="card-header bg-success text-white">
+					<h2 class="">Building a Calculator with Bootstrap UI</h2>
+				</div>
+				<div class="card-body">
+					<div class="alert alert-success" id="success-alert" style="display: none"><strong>Result:</strong> <span id="result"></span></div>
+					<div class="alert alert-danger" id="error-alert" style="display: none"><strong>Error:</strong> <span id="error-message"></span></div>
+					<div class="form-group mb-3">
+						<label for="num1" class="form-label">First Number:</label>
+						<input type="number" class="form-control" id="num1" placeholder="Enter first number" />
+					</div>
+					<div class="form-group mb-3">
+						<label for="num2" class="form-label">Second Number:</label>
+						<input type="number" class="form-control" id="num2" placeholder="Enter second number" />
+					</div>
+					<div class="form-group mb-3">
+						<label for="operation" class="form-label">Operation:</label>
+						<select class="form-select" id="operation">
+							<option disabled selected>-- Selected Operation --</option>
+							<option value="addition">Addition (+)</option>
+							<option value="subtraction">Subtraction (-)</option>
+							<option value="multiplication">Multiplication (*)</option>
+							<option value="division">Division (/)</option>
+						</select>
+					</div>
+					<button type="button" class="btn btn-success btn-block w-100" onclick="calculate()">Calculate</button>
+				</div>
+			</div>
+		</div>
+		<!-- main content -->
+
+		<!-- Script JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="js/script.js"></script>
+	</body>
+</html>
